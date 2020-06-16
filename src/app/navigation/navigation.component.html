@@ -1,0 +1,19 @@
+<nav class="toolbar" role="banner">
+  <img width="40" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="/>
+  <span *ngIf="!currentUser">Please sign in...</span>
+  <span *ngIf="currentUser">Signed in as <strong>{{ currentUser }}</strong></span>
+  <div class="spacer"></div>
+
+  <ul class="card-container">
+    <li class="card card-small"><a routerLink="/posts">Posts</a></li>
+    <li class="card card-small"><a routerLink="/register">Register</a></li>
+    <li class="card card-small"><a routerLink="/login">Login</a></li>
+  </ul>
+
+  <div class="spacer"></div>
+
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+    <img src="/assets/images/twitter-logo.svg" height="48">
+  </a>
+</nav>
+
