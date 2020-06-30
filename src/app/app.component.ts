@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'mean2';
 
-  SignedinEvent(user) {
+  onSignedIn(user) {
     console.log('APP.SignedinEvent called: ', user);
   }
 }
